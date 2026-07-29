@@ -16,7 +16,7 @@ img {
 
 /* The hero section styling- use your OWN Hero Image URL here */
 .hero {
-    background-image: url('images/Websitebanner.PNG');
+    background-image: url('images/Backround_Banner.png');
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -30,17 +30,43 @@ img {
 
 /* BIG text styling for the hero section text */
 .hero-text {
+    opacity: 0.85;
     font-size: 5em;
     font-weight: bold;
+    color: cyan;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  rgb(17, 73, 2);
 }
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+li a:hover {
+  background-color: #111111;
+}
 /* nice big font on a banner style background */
 .topic-title{
     color: rgb(0, 105, 131);
     text-align: center;
-    font-size: em;
+    font-size: 1.5em;
     padding: 0.1em 3em;
     background-color: rgb(17, 73, 2);
+    padding-left: 100px;
 }
 
 /* Three column grid with a nice big gap */
@@ -54,8 +80,63 @@ img {
     margin: 3em auto;
 }
 
+
+/* Three column grid with a nice big gap */
+.topic-content1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6em;
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
+
+.topic-content2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 2em auto;
+}
+.topic-content3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
+    height: 700px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.topic-card2{
+    height: 500px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.topic-card3{
+    height: 600px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.topic-card1{
+    height: 700px;
     background-color: rgb(71, 71, 71);
     color: white;
     padding: 1em;
@@ -63,9 +144,26 @@ img {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+.topic-card1 img {
+  width: 50%;   /* Makes the image take up only half the card's width */
+  margin: 0 auto; /* Centers the image inside the card */
+  display: block;
+}
+.topic-card2 img {
+  width: 120%;   /* Makes the image take up only half the card's width */
+  margin: 0 auto; /* Centers the image inside the card */
+  object-fit: cover; 
+  display: block;
+}
+
 /* Styling for the topic card titles */
+.topic-card3-text{
+    font-size: 2rem;
+    /* center align text */
+    text-align: center;
+}
 .topic-card-text{
-    font-size: 4em;
+    font-size: 3rem;
     margin-bottom: 0.5em;
     /* center align text */
     text-align: center;
@@ -79,3 +177,4 @@ img {
     font-size: 1.5em;
     padding: 3em 3em;
 }
+
