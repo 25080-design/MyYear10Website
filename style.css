@@ -150,7 +150,7 @@ li a:hover {
   display: block;
 }
 .topic-card2 img {
-  width: 120%;   /* Makes the image take up only half the card's width */
+  width: 100%;   /* Makes the image take up only half the card's width */
   margin: 0 auto; /* Centers the image inside the card */
   object-fit: cover; 
   display: block;
