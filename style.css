@@ -88,6 +88,7 @@ li a:hover {
     gap: 6em;
     /* bring the whole section in off the sides of the page */
     width: 70%;
+    max-width: 1200px; 
     /* top margin of 3em and center right/left */
     margin: 3em auto;
 }
@@ -97,7 +98,7 @@ li a:hover {
     grid-template-columns: repeat(5, 1fr);
     gap: 2em;
     /* bring the whole section in off the sides of the page */
-    width: 70%;
+    width: 97%;
     /* top margin of 3em and center right/left */
     margin: 2em auto;
 }
@@ -106,7 +107,17 @@ li a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
     /* bring the whole section in off the sides of the page */
-    width: 70%;
+    width: 90%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
+
+.topic-content4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    /* bring the whole section in off the sides of the page */
+    width: 90%;
     /* top margin of 3em and center right/left */
     margin: 3em auto;
 }
@@ -144,6 +155,15 @@ li a:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+.topic-card4{
+    height: 500px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
 .topic-card1 img {
   width: 50%;   /* Makes the image take up only half the card's width */
   margin: 0 auto; /* Centers the image inside the card */
@@ -165,6 +185,11 @@ li a:hover {
 .topic-card-text{
     font-size: 3rem;
     margin-bottom: 0.5em;
+    /* center align text */
+    text-align: center;
+}
+.topic-card4-text{
+    font-size: 1.5rem;
     /* center align text */
     text-align: center;
 }
